@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.io.*;
+class Main {
+void time(int a)
+ {
+    int h=0,minute=0;
+   h=a/60;
+   minute=a%60;
+    System.out.println(h+":"+minute);
+ }
+    public static void main(String[] args) 
+    {
+       Main obj= new Main();
+        System.out.println("the number of minutes past midnight : ");
+       Scanner sc=new Scanner(System.in);
+       int a=sc.nextInt();
+      obj.time(a);
+    }
+    }
